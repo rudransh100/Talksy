@@ -24,31 +24,12 @@ Backend: Node.js, Express
 WebSocket: Socket.IO
 
 📂 Project Structure
-Talksy/
-│
-├── backend/
-│   ├── node_modules/
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
-│
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   ├── main.jsx
-│   │   └── ws.js
-│   ├── .gitignore
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   ├── package-lock.json
-│   └── vite.config.js
-│
-└── README.md
+
+
+<img width="269" height="512" alt="image" src="https://github.com/user-attachments/assets/474a3a97-bbab-4b08-89ca-ec638b25f346" />
+
+
+
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/rudransh100/talksy.git
