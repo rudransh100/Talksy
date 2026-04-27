@@ -1,52 +1,51 @@
-import { createServer } from "node:http";
-import express from "express";
-import { Server } from "socket.io";
+import { createServer } from 'node:http';
+import express from 'express';
+import { Server } from 'socket.io';
 
 const app = express();
+
 const server = createServer(app);
 
 const io = new Server(server, {
-  cors: {
-    origin: "https://convox01.vercel.app",
-  },
+    cors: {
+        origin: '*',
+    },
 });
 
-const ROOM = "group";
+const ROOM = 'group';
 
-io.on("connection", (socket) => {
-  console.log("a user connected", socket.id);
+io.on('connection', (socket) => {
+    console.log('a user connected', socket.id);
 
-  // ✅ join room
-  socket.on("joinRoom", async (userName) => {
-    console.log(`${userName} is joining the group`);
-    await socket.join(ROOM);
-    socket.to(ROOM).emit("roomNotice", userName);
-  });
+    socket.on('joinRoom', async (userName) => {
+        console.log(`${userName} is joining the group.`);
 
-  // ✅ moved OUTSIDE
-  socket.on("chatMessage", (msg) => {
-    socket.to(ROOM).emit("chatMessage", msg);
-  });
+        await socket.join(ROOM);
 
-  socket.on("typing", (userName) => {
-    socket.to(ROOM).emit("typing", userName);
-  });
+        // send to all
+        // io.to(ROOM).emit('roomNotice', userName);
 
-  socket.on("stopTyping", (userName) => {
-    socket.to(ROOM).emit("stopTyping", userName);
-  });
+        // broadcast
+        socket.to(ROOM).emit('roomNotice', userName);
+    });
 
-  socket.on("disconnect", () => {
-    console.log("user disconnected", socket.id);
-  });
+    socket.on('chatMessage', (msg) => {
+        socket.to(ROOM).emit('chatMessage', msg);
+    });
+
+    socket.on('typing', (userName) => {
+        socket.to(ROOM).emit('typing', userName);
+    });
+
+    socket.on('stopTyping', (userName) => {
+        socket.to(ROOM).emit('stopTyping', userName);
+    });
 });
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello world</h1>");
+app.get('/', (req, res) => {
+    res.send('<h1>Hello world</h1>');
 });
 
-const PORT = process.env.PORT || 4600;
-
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+server.listen(4600, () => {
+    console.log('server running at http://localhost:4600');
 });
