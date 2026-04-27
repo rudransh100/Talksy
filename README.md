@@ -1,66 +1,96 @@
-💬 Talksy — Real-Time Chat Application
+# 💬 Talksy — Real-Time Chat Application
 
-A modern real-time chat application built using React (Vite) and Socket.IO, enabling users to communicate instantly with live updates and a smooth UI.
+A modern real-time chat application built using **React (Vite)** and **Socket.IO**, enabling users to communicate instantly with live updates and a smooth, responsive UI.
 
-🚀 Live Demo
+---
 
-🔗 Add your deployed link here
+## 🚀 Live Demo
 
-📌 Features
+🔗 *Add your deployed link here*
 
-🔗 Real-time messaging using WebSockets
-👤 Join chat with a username
-💬 Group chat (single room)
-⌨️ Live typing indicator
-🕒 Message timestamps
-📱 Fully responsive UI
-✨ Clean and modern chat interface
+---
 
-🛠️ Tech Stack
+## 📌 Features
 
-Frontend: React.js (Vite), JavaScript (ES6+)
-Styling: CSS / Tailwind (if you used it, update accordingly)
-Backend: Node.js, Express
-WebSocket: Socket.IO
+* 🔗 Real-time messaging using WebSockets
+* 👤 Join chat with a username
+* 💬 Group chat (single room)
+* ⌨️ Live typing indicator
+* 🕒 Message timestamps
+* 📱 Fully responsive UI
+* ✨ Clean and modern chat interface
 
-📂 Project Structure
+---
 
+## 🛠️ Tech Stack
 
-<img width="269" height="512" alt="image" src="https://github.com/user-attachments/assets/474a3a97-bbab-4b08-89ca-ec638b25f346" />
+* **Frontend:** React.js (Vite), JavaScript (ES6+)
+* **Styling:** Tailwind CSS
+* **Backend:** Node.js, Express
+* **WebSocket:** Socket.IO
 
+---
 
+## 📂 Project Structure
 
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+![Project Structure](https://github.com/user-attachments/assets/474a3a97-bbab-4b08-89ca-ec638b25f346)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/rudransh100/talksy.git
 cd talksy
-2️⃣ Setup Backend
+```
+
+### 2️⃣ Setup Backend
+
+```bash
 cd backend
 npm install
 npm start
-3️⃣ Setup Frontend
+```
+
+### 3️⃣ Setup Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
-📸 Screenshots
+```
 
-Add screenshots of your chat app here
+---
 
-📬 Contact
+## 📸 Screenshots
 
-📧 Email: rudranshupadhyay@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/rudransh-upadhyay01/
-💻 GitHub: https://github.com/rudransh100
+*Add screenshots of your chat app here*
 
-🤝 Contributing
+---
+
+## 📬 Contact
+
+* 📧 Email: [rudranshupadhyay@gmail.com](mailto:rudranshupadhyay@gmail.com)
+* 💼 LinkedIn: https://www.linkedin.com/in/rudransh-upadhyay01/
+* 💻 GitHub: https://github.com/rudransh100
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome!
 Feel free to fork the repo and submit a pull request.
 
-⭐ Show Your Support
+---
+
+## ⭐ Show Your Support
 
 If you like this project, give it a ⭐ on GitHub!
 
-📄 License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License.
