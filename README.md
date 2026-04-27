@@ -1,58 +1,64 @@
-# 💬 Convox — Real-Time Chat Application
+💬 Talksy — Real-Time Chat Application
 
-A modern real-time chat application built using **React (Vite)** and **Socket.IO**, allowing users to communicate instantly in a shared room with live typing indicators.
+A modern real-time chat application built using React (Vite) and Socket.IO, enabling users to communicate instantly with live updates and a smooth UI.
 
----
+🚀 Live Demo
 
-## 🚀 Live Demo
+🔗 Add your deployed link here
 
-🔗 https://convox01.vercel.app/
+📌 Features
 
----
+🔗 Real-time messaging using WebSockets
+👤 Join chat with a username
+💬 Group chat (single room)
+⌨️ Live typing indicator
+🕒 Message timestamps
+📱 Fully responsive UI
+✨ Clean and modern chat interface
 
-## 📌 Features
+🛠️ Tech Stack
 
-* 🔗 Real-time messaging using WebSockets
-* 👤 Join chat with a username
-* 💬 Group chat (single room)
-* ⌨️ Live typing indicator
-* 🕒 Message timestamps
-* 📱 Fully responsive UI
-* ✨ Smooth and clean chat interface
+Frontend: React.js (Vite), JavaScript (ES6+)
+Styling: CSS / Tailwind (if you used it, update accordingly)
+Backend: Node.js, Express
+WebSocket: Socket.IO
 
----
-
-## 🛠️ Tech Stack
-
-* **Frontend:** React.js (Vite), JavaScript (ES6+)
-* **Styling:** Tailwind CSS
-* **Backend:** Node.js, Express
-* **WebSocket:** Socket.IO
-
----
-
-## 📂 Project Structure
-
-
-<img width="794" height="632" alt="image" src="https://github.com/user-attachments/assets/3c31ec24-e96d-43ff-9b7a-008a7953b0f1" />
-
-
-
----
-
-## ⚙️ Installation & Setup
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/kushB645/convox.git
-
-Setup Backend
+📂 Project Structure
+Talksy/
+│
+├── backend/
+│   ├── node_modules/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   └── ws.js
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+└── README.md
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/rudransh100/talksy.git
+cd talksy
+2️⃣ Setup Backend
 cd backend
 npm install
 npm start
-Setup Frontend
-cd convox
+3️⃣ Setup Frontend
+cd frontend
 npm install
 npm run dev
 📸 Screenshots
@@ -60,14 +66,17 @@ npm run dev
 Add screenshots of your chat app here
 
 📬 Contact
-📧 Email: kush.bhardwaj.dev@outlook.com
-💼 LinkedIn: https://linkedin.com/in/your-profile
-💻 GitHub: https://github.com/your-username
+
+📧 Email: rudranshupadhyay@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/rudransh-upadhyay01/
+💻 GitHub: https://github.com/rudransh100
+
 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
 
-⭐ Show your support
+⭐ Show Your Support
 
 If you like this project, give it a ⭐ on GitHub!
 
